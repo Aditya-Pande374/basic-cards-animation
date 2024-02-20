@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: black;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -17,16 +17,23 @@ body{
 }
 
 .table{
-    height: 90%;
-    width: 70%;
-    transform: rotateX(70deg) rotateY(0deg) rotateZ(0deg);
-    background-color: aqua;
+    height: 70%;
+    width: 60%;
+    transform: rotateX(40deg) rotateY(0deg) rotateZ(0deg);
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 10px solid red;
     border-radius: 100px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .start, .end{
@@ -43,24 +50,36 @@ body{
 
 }
 
+.card{
+    background: rgba( 255, 255, 255, 0.05 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+}
+
 .card-1{
-    background: url("https://img.freepik.com/free-vector/ace-spades-playing-card-isolated_1308-78891.jpg?t=st=1708258379~exp=1708258979~hmac=2dc66ce2fcc33e2e006fd5e015866fe1c853783dc63e6c517d01f79e3e5f9c90") no-repeat center/100%;
+    background: url("https://img.freepik.com/free-vector/ace-spades-playing-card-isolated_1308-78891.jpg?t=st=1708258379~exp=1708258979~hmac=2dc66ce2fcc33e2e006fd5e015866fe1c853783dc63e6c517d01f79e3e5f9c90") no-repeat center/90%;
     grid-area: 1 / 1 / 2 / 2;
-    height: 100%;
+    /* height: 100%; */
     /* z-index: 1; */
 }
 
 .card-2{
-    background: url("https://img.freepik.com/free-vector/six-spades-playing-card-isolated_1308-78266.jpg?w=740&t=st=1708258563~exp=1708259163~hmac=372d34fadb1c092c55f802572db110ad0227e3f3d472e407d5f2b2616615914b") no-repeat center/100%;
+    background: url("https://img.freepik.com/free-vector/six-spades-playing-card-isolated_1308-78266.jpg?w=740&t=st=1708258563~exp=1708259163~hmac=372d34fadb1c092c55f802572db110ad0227e3f3d472e407d5f2b2616615914b") no-repeat center/90%;
     grid-area: 1 / 1 / 2 / 2;
-    height: 100%;
+    /* transform: rotate(-10deg); */
+    /* height: 100%; */
     /* z-index: 2; */
 }
 
 .card-3{
-    background: url("https://img.freepik.com/free-vector/four-spades-playing-card-isolated_1308-78646.jpg?w=740&t=st=1708258507~exp=1708259107~hmac=bf9bd85e6b2b75f9c5a8437ee4e4574afb0b2ffd8ecc6a127540d729e98f8280") no-repeat center/100%;
+    background: url("https://img.freepik.com/free-vector/four-spades-playing-card-isolated_1308-78646.jpg?w=740&t=st=1708258507~exp=1708259107~hmac=bf9bd85e6b2b75f9c5a8437ee4e4574afb0b2ffd8ecc6a127540d729e98f8280") no-repeat center/90%;
     grid-area: 1 / 1 / 2 / 2;
-    height: 100%;
+    /* transform: rotate(10deg); */
+    /* height: 100%; */
     /* z-index: 3; */
 }
 
