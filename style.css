@@ -1,0 +1,89 @@
+body{
+    background-color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    perspective: 1500px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.table{
+    height: 90%;
+    width: 70%;
+    transform: rotateX(70deg) rotateY(0deg) rotateZ(0deg);
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 10px solid red;
+    border-radius: 100px;
+}
+
+.start, .end{
+    height: 80%;
+    width: 30%;
+}
+
+.start{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+
+}
+
+.card-1{
+    background: url("https://img.freepik.com/free-vector/ace-spades-playing-card-isolated_1308-78891.jpg?t=st=1708258379~exp=1708258979~hmac=2dc66ce2fcc33e2e006fd5e015866fe1c853783dc63e6c517d01f79e3e5f9c90") no-repeat center/100%;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    /* z-index: 1; */
+}
+
+.card-2{
+    background: url("https://img.freepik.com/free-vector/six-spades-playing-card-isolated_1308-78266.jpg?w=740&t=st=1708258563~exp=1708259163~hmac=372d34fadb1c092c55f802572db110ad0227e3f3d472e407d5f2b2616615914b") no-repeat center/100%;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    /* z-index: 2; */
+}
+
+.card-3{
+    background: url("https://img.freepik.com/free-vector/four-spades-playing-card-isolated_1308-78646.jpg?w=740&t=st=1708258507~exp=1708259107~hmac=bf9bd85e6b2b75f9c5a8437ee4e4574afb0b2ffd8ecc6a127540d729e98f8280") no-repeat center/100%;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 100%;
+    /* z-index: 3; */
+}
+
+.animation{
+    animation: moving 2s linear forwards;
+}
+
+.animation-reverse{
+    animation: moving-reverse 2s linear forwards;
+}
+
+@keyframes moving-reverse{
+    from{
+        transform: translateX(230%);
+    }to{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moving{
+    from{
+        transform: translateX(0px);
+    }to{
+        transform: translateX(230%);
+    }
+}
